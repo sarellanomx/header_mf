@@ -3,7 +3,6 @@
  */
 const nextConfig = {
   reactStrictMode: true,
-  distDir: 'build', // Defined build directory
   webpack: (config, options) => { // webpack configurations
     config.plugins.push(
       new options.webpack.container.ModuleFederationPlugin({
