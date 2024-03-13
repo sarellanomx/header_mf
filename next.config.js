@@ -8,7 +8,7 @@ const nextConfig = {
       new options.webpack.container.ModuleFederationPlugin({
         name:"fe1",
         filename: "static/chunks/remoteEntry.js", // remote file name which will used later
-        remoteType: "var",
+        remoteType: "script",
         exposes: { // expose all component here.
           "./header": "./src/component/Header"
         },
